@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String fuction</title>
+</head>
+
+<body>
+    <h1>The string fuction</h1>
+    <script>
+        var str = "This is string";
+        console.log(str);
+        console.log(str.indexOf('is')); //first ocurrence
+        console.log(str.lastIndexOf('is')); //last ocurrence
+        var substr = str.slice(1, 8); // take nagative as well
+        console.log(substr);
+        var substr1 = str.substring(5, 11); // cant negative values
+        console.log(substr1);
+        var substr2 = str.substr(2, 11);
+        console.log(substr2);
+        var replace = str.replace('string', 'juned');
+        console.log(replace);
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        var concat = str.concat('new string'); // istead of it using +
+        console.log(concat);
+        var trim = '     this is      trim      ';
+        console.log(trim);
+        console.log(trim.trim()); //trim starrt and end wide space
+        console.log(str.charAt(3));
+        console.log(str.charCodeAt(3));
+        console.log(str[2]);
+    </script>
+</body>
+
+</html>

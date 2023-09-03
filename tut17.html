@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font in css</title>
+    <!-- import bcz its not in websafe ,import form google font  -->
+    <link rel="stylesheet" href="'https://fonts.googleapis.com/css2?family=Redressed&display=swap">
+    <style>
+        #first{
+
+            font-weight: bolder;
+            font-size: medium;
+            text-align: center;
+        }
+        h1{
+            /* px is 1/96th of inch */
+            font-size: 59px;
+          /* it is font stack */
+            font-family: 'Redressed', cursive, Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        #second{
+            font-style: italic;
+            line-height: 5em; 
+            text-align: center;/* it multiplication of default parent hight*/
+        }
+        
+
+    </style>
+</head>
+<body>
+   <h1>
+       Font in Css
+   </h1>
+   <P id="first">
+       This is first paragraph
+   </P>
+   <P id="second">
+    This is second paragraph
+</P>
+</body>
+</html>

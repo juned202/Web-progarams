@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background and border</title>
+    <style>
+        #first{
+            height: 200px;
+            width: 400px;
+            background-color: lightpink;
+            border: 2px solid rebeccapurple;
+        }
+        #second{
+            height: 200px;
+            width: 400px;
+            background-color: lightpink;
+            border: 2px solid rebeccapurple;
+            border-radius: 15px;
+        }
+        #third{
+            height: 200px;
+            width: 400px;
+            background-color: lightpink;
+            border-bottom: 2px solid rebeccapurple;/*where to put border*/
+            border-bottom-left-radius: 10px;/*where to put curve*/
+            background-image: url('king.png');
+            background-repeat: no-repeat;/*repeat-x and repeat-y is pu image on x axis and y axis respectivly */
+            background-position: center;
+            /* background-position: top right;both for image position */
+        }
+    </style>
+</head>
+<body>
+    <h2>First heading</h2>
+    <p id="first">This is first paragraph</p>
+    <h2>First heading</h2>
+    <p id="second">This is first paragraph</p>
+    <h2>First heading</h2>
+    <p id="third">This is first paragraph</p>
+</body>
+</html>

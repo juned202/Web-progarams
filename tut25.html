@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            height:  3000px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid palevioletred;
+            width: 150px;
+            height: 150px;
+        }
+        #box1{
+            position:static ;/*cant change */
+            top: 10px;
+        }
+        #box2{
+            position: relative ;/*change to its position give gap at that position*/
+            top: 10px;
+            right: 40px;
+        }
+        #box3{
+            position:absolute;/*change to it last parent position*/
+            top: 50px;
+            left: 50px;
+        }
+        #box4{
+            position:fixed ;/*fixed throughput the page*/
+            right: 8px;
+          bottom: 5px;
+        }
+        #box5{
+            position:sticky ;/*stick ti it position*/
+            top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">static</div> 
+        <div class="box" id="box2">relative</div>
+        <div class="box" id="box3">absolute</div>
+        <div class="box" id="box4">fixed</div>
+        <div class="box" id="box5">sticky</div>
+    </div>
+    
+</body>
+</html>

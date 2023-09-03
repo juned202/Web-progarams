@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        .nav {
+            background-color: black;
+            border-radius: 20px;
+        }
+        
+        .right {
+            float: right;
+        }
+        
+        .left {
+            float: left;
+            /*ineer elemetn give float*/
+        }
+        
+        .nav li {
+            margin: 10px;
+        }
+        
+        .nav ul {
+            list-style: none;
+            overflow: auto;
+            /*outer elment give to overflow*/
+            margin: 15px;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .nav a:hover {
+            color: chocolate;
+        }
+        
+        #btn {
+            padding: 2px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border-radius: 2px;
+            border: 2px solid chocolate;
+            border-radius: 15px;
+            color: chocolate;
+        }
+        
+        #btn:hover {
+            cursor: pointer;
+            background-color: gray;
+            border: 2px solid gray;
+        }
+        
+        #search {
+            padding: 2px;
+            border-radius: 15px;
+        }
+        
+        h1 {
+            color: hotpink;
+            margin: 5px;
+        }
+        
+        #g {
+            color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <h1 class="left">N</h1>
+            <ul>
+                <li class="left"><a href="#">Home</a></li>
+                <li class="left"><a href="#">About</a></li>
+                <li class="right">
+                    <div id="last">
+                        <input type="text" name="search" id="search" placeholder="search">
+                        <botton id="btn">
+                            <a href="https://www.google.com" target="_blank" id="g">search</a>
+                        </botton>
+                    </div>
+                </li>
+
+
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

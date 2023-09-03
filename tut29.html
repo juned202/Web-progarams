@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html {
+            font-size: 25px;
+            /*whole html page font size*/
+        }
+        
+        .container {
+            border: 2px solid black;
+            width: 100vw;
+            /*it is like percentage 100 then whole page width*/
+            height: 100vh;
+            /*it is like percentage 100 then whole page hight*/
+            font-size: 10px;
+            /*container font size*/
+            text-align: center;
+        }
+        
+        #first {
+            font-size: 3rem;
+            /*rem means multiply by whole page size*/
+            padding: 2rem;
+            /*multiply by whole page size */
+        }
+        
+        #second {
+            font-size: 3em;
+            /*multiply by parent size */
+            padding: 2em;
+            /*multiply by font size of same element (it is deffrent from rem)*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="thrd">This is thirs heading</h1>
+    </div>
+
+</body>
+
+</html>

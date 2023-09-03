@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box {
+            background-color: blanchedalmond;
+            color: white;
+            font-size: 70px;
+            display: none;
+            text-align: center;
+        }
+        
+        @media only screen and (max-width:300px) {
+            #box1 {
+                background-color: turquoise;
+                display: block;
+            }
+        }
+        
+        @media only screen and (min-width: 300px) and (max-width:450px) {
+            #box2 {
+                background-color: yellowgreen;
+                display: block;
+            }
+        }
+        
+        @media only screen and (min-width: 450px) and (max-width:800px) {
+            #box3 {
+                background-color: pink;
+                display: block;
+            }
+        }
+        
+        @media only screen and (min-width: 800px) {
+            #box4 {
+                background-color: rgb(167, 89, 89);
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">This is galaxy fold</div>
+    <div class="box" id="box2">This is iphone 6/7 plus </div>
+    <div class="box" id="box3">This is ipad</div>
+    <div class="box" id="box4">this is computer</div>
+</body>
+
+</html>

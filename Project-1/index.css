@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('bg.jpg');
+    height: fit-content;
+}
+
+.head {
+    height: 100px;
+}
+
+#navbar ul {
+    overflow: auto;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    margin: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navbar a:hover {
+    color: wheat;
+}
+
+span {
+    color: white;
+    float: left;
+}
+
+img {
+    width: 100px;
+    float: left;
+}
+
+.container {
+    display: block;
+    width: 400px;
+    border: 1px solid white;
+    margin: 70px;
+    padding: 40px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+    display: block;
+    text-align: center;
+    margin: 4px;
+}
+
+input {
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+div {
+    display: inline-block;
+    margin: auto;
+}
+
+#nav {
+    margin: auto 200px;
+}
+
+#sym {
+    width: 120px;
+    margin: auto;
+}
+
+span {
+    margin: auto 16px;
+    font-family: 'Redressed', cursive;
+}
+
+.right {
+    float: right;
+}
+
+.btn {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin: 1px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn:hover,
+.btn1:hover {
+    color: wheat;
+    background-color: rgb(207, 0, 0);
+}
+
+.btn1 {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin: 9px;
+    cursor: pointer;
+    font-size: 50px;
+    border-radius: 3px;
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+    font-style: italic;
+    font-family: monospace;
+}
+
+.copy {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 500px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#submit {
+    padding-inline: 95px;
+    background-color: rgba(24, 16, 16, 0.281);
+    border: 2px solid white;
+    color: white;
+}
+
+#reset {
+    background-color: rgba(24, 16, 16, 0.281);
+    border: 2px solid white;
+    color: white;
+    padding-inline: 102px;
+}
+
+#reset:hover,
+#submit:hover {
+    color: wheat;
+    background-color: rgb(233, 183, 183);
+    cursor: pointer;
+}
+
+.about {
+    color: white;
+}

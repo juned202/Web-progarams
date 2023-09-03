@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        *{
+            box-sizing: border-box;/*margin and padding cant more than width*/
+            background-color: pink;
+        }
+        header{
+           
+            margin: auto;/*for center position*/
+            background-color:white;
+
+        }
+        img{
+            display: block;/*only block element can change width and set margin*/
+            margin: auto;
+            width: 100px;
+        }
+        h1{
+            text-align: center;
+            margin: auto;
+            color: palevioletred;
+            background-color: white;
+        }
+        .box{
+            border: 2px solid gray;
+            margin: 2px;
+            padding: 2px;
+            display: inline-block;/*the box is inline but using this we can change width and stil its inline element*/
+            width: 32%;
+            background-color: thistle;
+        }
+        h2,p{
+            background-color: gray;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="king.png" alt="no">
+        <h1>THE KING</h1>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h2>The Heading</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo obcaecati laboriosam inventore voluptatem
+                commodi assumenda cum perferendis iure facilis consequuntur, autem, quod delectus qui dicta nobis
+                molestias suscipit eum minus modi hic optio doloremque vel. Magni laudantium ea repudiandae. Quas!</p>
+        </div>
+        <div class="box">
+            <h2>The Heading</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo obcaecati laboriosam inventore voluptatem
+                commodi assumenda cum perferendis iure facilis consequuntur, autem, quod delectus qui dicta nobis
+                molestias suscipit eum minus modi hic optio doloremque vel. Magni laudantium ea repudiandae. Quas!</p>
+        </div>
+        <div class="box">
+            <h2>The Heading</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo obcaecati laboriosam inventore voluptatem
+                commodi assumenda cum perferendis iure facilis consequuntur, autem, quod delectus qui dicta nobis
+                molestias suscipit eum minus modi hic optio doloremque vel. Magni laudantium ea repudiandae. Quas!</p>
+        </div>
+    </div>
+</body>
+
+</html>

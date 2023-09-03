@@ -1,0 +1,57 @@
+#navbar {
+    flex-direction: column;
+}
+
+#navbar a {
+    padding: 0px;
+    margin: 10px
+}
+
+#home::before {
+    height: 750px;
+}
+
+#home {
+    margin-top: 5px;
+}
+
+#home h1 {
+    font-size: 50px;
+}
+
+#container {
+    margin-top: 239px;
+}
+
+.services {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#client img {
+    width: 100px;
+    margin: 20px;
+    padding: 0px;
+}
+
+#client::before {
+    height: 500px;
+}
+
+#client {
+    overflow: hidden;
+}
+
+#client div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        
+        .box {
+            background-color: blanchedalmond;
+            padding: 20px;
+            margin: 10px;
+        }
+        
+        #first {
+            /*X Y and color*/
+            box-shadow: 10px 13px rgb(158, 158, 228);
+        }
+        
+        #second {
+            /*-X -Y and color shadow in the box*/
+            box-shadow: inset -7px -55px rgb(158, 158, 228);
+        }
+        
+        #third {
+            /*X Y blur rgba color spread wher a is stand fpr alpha and its use for darkness*/
+            /* two shadow */
+            box-shadow: 10px 13px 5px 5px rgba(30, 40, 40, 5), 20px 20px red;
+        }
+        
+        #first h1 {
+            text-shadow: 10px 5px 2px rgb(50, 50, 100);
+        }
+        
+        #second h1 {
+            text-shadow: -2px -4px 2px seagreen;
+        }
+        
+        #third h1 {
+            text-shadow: 3px 4px rgba(30, 40, 40, 5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="first">
+            <h1>This is Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laudantium reprehenderit tenetur, alias ducimus numquam a nam, quod iure ullam, laborum facere debitis!</p>
+        </div>
+        <div class="box" id="second">
+            <h1>This is Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laudantium reprehenderit tenetur, alias ducimus numquam a nam, quod iure ullam, laborum facere debitis!</p>
+        </div>
+        <div class="box" id="third">
+            <h1>This is Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laudantium reprehenderit tenetur, alias ducimus numquam a nam, quod iure ullam, laborum facere debitis!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

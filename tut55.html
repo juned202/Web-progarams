@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+
+<body>
+    <h1>Loops in js</h1>
+    <script>
+        // let i = 4;
+        // for (i = 0; i < 4; i++) {
+        //     console.log(i);
+        // }
+
+        let name = ["juned", "sahil", "sahir", "fahim", "akib"];
+        // for (let index = 0; index < name.length; index++) {
+        //     const element = name[index];
+        //     console.log("hello friends " + element);
+        // }
+
+        // name.forEach(element => {
+        //     console.log("hello friends " + element);
+        // });
+
+        // for (const element of name) {
+
+        //     console.log("hello friends " + element);
+        // }
+
+        let empl = {
+            name: 'juned',
+            salary: 2000,
+            id: 2
+        }
+        for (key in empl) {
+            console.log(`${key} is  ${empl[key]}`);
+        }
+
+
+        // let i = 0;
+        // while (i < 4) {
+        //     console.log(i);
+        //     i++;
+        // }
+
+        // let i = 34;
+        // do {
+        //     console.log(`${i} is 35 is wrong`);
+        //     i++;
+        // } while (i = 35);
+    </script>
+</body>
+
+</html>

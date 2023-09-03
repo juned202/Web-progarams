@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance selector</title>
+    <style>
+        h1 {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        
+        div {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        div ul p {
+            /*div have ul and ul have p then apply that p*/
+            background-color: blanchedalmond;
+        }
+        
+        div>p {
+            /*divs direct child p*/
+            background-color: cadetblue;
+        }
+        
+        div+p {
+            /*divs sibling means that which is write after div*/
+            background-color: rgb(238, 163, 163);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is heading</h1>
+    <div class="cotnainer">
+        <div class="item">
+            <p>ths is paragraph</p>
+            <ul>
+                <li>
+                    <p>this is inner paragraph</p>
+                </li>
+            </ul>
+
+        </div>
+        <p>this is direct paragraph</p>
+    </div>
+    <p>this is outer most paragraph</p>
+</body>
+
+</html>

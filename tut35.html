@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vriables</title>
+    <style>
+        /*root is use for global variable*/
+        /*-- is use for define variable*/
+        
+         :root {
+            --primary-color: rgb(231, 173, 173);
+            --secondary-color: rgb(187, 187, 117);
+        }
+        
+        .container {
+            /*here width is variable and is local varible*/
+            --width: 1000px;
+            display: flex;
+            /*variable is use like below*/
+            width: var(--width);
+            background-color: var(--secondary-color);
+            margin: auto;
+            justify-content: center;
+        }
+        
+        .box {
+            margin: 20px;
+            background-color: var(--primary-color);
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

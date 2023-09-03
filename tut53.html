@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions in js</title>
+</head>
+
+<body>
+    <h1>functions in js</h1>
+    <script>
+        function new1(name, text = 'this is by default') {
+            console.log(name + ' ' + text);
+
+        }
+        let name = 'juned';
+        let name1 = 'mansuri';
+        let name2 = 'ok';
+        let name3 = 'not';
+        let text = ' this is not by default';
+        new1(name);
+        new1(name1, text);
+        new1(name2, text);
+        new1(name3, text);
+
+        function sum(a, b, c) {
+            let d = a + b + c;
+            return (d);
+        }
+        let returnval = sum(2, 4, 6);
+        console.log(returnval);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child</title>
+    <style>
+        .center {
+            display: block;
+            text-align: center;
+        }
+        /*type text then apply*/
+        
+        input[type='text'] {
+            background-color: goldenrod;
+        }
+        /*if a contain target then apply*/
+        
+        a[target] {
+            color: gray;
+        }
+        /*lis nth child apply(even,odd,3n+1,2)like that*/
+        
+        li:nth-child(even) {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="center">
+        <div><a href="https://google.com" target="_blank">GO TO GOOGLE</a></div>
+        <div><a href="https://facebook.com">GO TO FACEBOOK</a></div>
+        <div><input type="text" placeholder="enter your name"></div>
+        <input type="number" name="mynumber" id="num" placeholder="enter you phone">
+    </form>
+    <div class="center">
+        <li id="item-1">item-1</li>
+        <li id="item-2">item-2</li>
+        <li id="item-3">item-3</li>
+        <li id="item-4">item-4</li>
+        <li id="item-5">item-5</li>
+        <li id="item-6">item-6</li>
+        <li id="item-7">item-7</li>
+        <li id="item-8">item-8</li>
+        <li id="item-9">item-9</li>
+        <li id="item-10">item-10</li>
+    </div>
+</body>
+
+</html>

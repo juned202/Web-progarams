@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selector</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            color: white;
+            background-color: black;
+        }
+        /*use for what to do before header*/
+        
+        header::before {
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            /*light the background*/
+            opacity: 0.5;
+        }
+        
+        .navbar {
+            display: flex;
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+        
+        li {
+            text-decoration: none;
+            margin: 10px;
+        }
+        
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 40px;
+        }
+        
+        h1 {
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> Home </li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Welcome to Code World</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam repellat nobis sapiente quaerat velit cumque fuga amet. Repudiandae nesciunt quam commodi qui, aut soluta quisquam alias enim, fugiat voluptatum saepe sapiente at nisi vero tempore!
+                Quasi nulla velit distinctio fugit.</p>
+        </section>
+    </header>
+</body>
+
+</html>

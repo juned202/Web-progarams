@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <!-- element-padding-border-marggin in this order box element is work -->
+    <style>
+        * {
+            box-sizing: border-box;
+            /* (*)is univarsal  */
+
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: hsl(207deg 40% 69%);/*for whole background color*/
+        }
+
+        .box {
+            padding: 30px 20px 40px 30px;
+            border: 8px solid rgb(216 21 88);
+            margin: 22px 239px;
+            width: 800px;
+            border-radius: 10px;
+            background-color: #ffe2b8;/*for box background color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <h2>This is heading</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero ut iusto, ex atque eos ullam
+            vitae, praesentium quisquam impedit illum dicta molestiae, odit provident vel commodi delectus. Cum,
+            corrupti.</p>
+    </div>
+    <div class="box">
+
+        <h2>This is heading</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero ut iusto, ex atque eos ullam
+            vitae, praesentium quisquam impedit illum dicta molestiae, odit provident vel commodi delectus. Cum,
+            corrupti.</p>
+    </div>
+    <div class="box">
+
+        <h2>This is heading</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero ut iusto, ex atque eos ullam
+            vitae, praesentium quisquam impedit illum dicta molestiae, odit provident vel commodi delectus. Cum,
+            corrupti.</p>
+    </div>
+
+</body>
+
+</html>

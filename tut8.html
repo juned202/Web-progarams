@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+        .up *{
+           vertical-align: top;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <!-- action means where data will store  -->
+    <form action="backend.php">
+        <!-- div is for new division means new line -->
+        <!-- here br is using for one line gap -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+        </div>
+        <br>
+        <div>
+            <!-- for and id will be same -->
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone">
+        </div>
+        <!-- br practice is not goofd insteade we have to use css -->
+        <br>
+        <div class="up" >
+            
+            <label for="add">Address:</label>
+            <!-- textare is for large text block  -->
+           <textarea name="addres" id="add" cols="30" rows="5"></textarea>
+           
+        </div>
+        <br>
+        <div>
+            <label for="dt">DOB:</label>
+           <input type="date" name="mydate" id="dt">
+        </div>
+        <br>
+        <div>
+            <!-- name means what name we save in backend basically it is for references -->
+            <!-- and checked means no need to check at final -->
+            <label for="cb">skills:</label><br>
+          Web:  <input type="checkbox" name="myskills" id="cb" checked>
+          Android:  <input type="checkbox" name="myskills" id="cb">
+          Java:  <input type="checkbox" name="myskills" id="cb">
+          Backend:  <input type="checkbox" name="myskills" id="cb" checked>
+        </div>
+        <br>
+        <div>
+            <label for="rb">Gender:</label><br>
+            <!-- in radion botton name must be same -->
+          Male:  <input type="radio" id="rb" name="gender"> 
+          FeMale: <input type="radio" id="rb" name="gender">
+          Other: <input type="radio" id="rb" name="gender">
+         
+        </div>
+        <br>
+        <div>
+            <label for="institue">select institue:</label><br>
+            <!-- in select selected means on screen first is there -->
+            <select name="myinst" id="institue">
+                <option value="iiit" selected>IIIT Vadodara</option>
+                <option value="nit">SVNIT Surat</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="pass">password:</label>
+            <input type="password" id="pass">
+        </div>
+        <br>
+        <div>
+            <label for="pass2"> Re-enter password:</label>
+            <input type="password" id="pass2">
+        </div>
+        <br>
+        <div>
+           <input type="submit" value="Sign in">
+           <input type="reset" value="reset">
+        </div>
+        <div>
+           
+        </div>
+        <br>
+    </form>
+    
+</body>
+</html>
